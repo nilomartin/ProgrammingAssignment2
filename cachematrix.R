@@ -4,7 +4,6 @@
 ## Once the inverse is computed, whenever cacheSolve is called it gets the inverse from cache.
 
 ##makeCacheMatrix has an square invertible matrix as input. Creates it as an object.
-
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -22,7 +21,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ##cacheSolve evaluates the inverse of the object created by makeCacheMatrix. 
 # If it has been already evaluated, it will get from cache.
-
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
   if(!is.null(m)) {
